@@ -1,0 +1,13 @@
+.toolbar_item {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 1px 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.toolbar_item_selected {
+    background-color: #000;
+    color: #fff;
+}
