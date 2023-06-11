@@ -30,7 +30,7 @@ export default class Portfolio extends Component {
                 <Toolbar
                     filters={["All", "Websites", "Flayers", "Business Cards"]}
                     selected={this.state.selected}
-                    onSelectFilter={(filter) => { this.setFilter(filter.target.textContent); }}
+                    onSelectFilter={(filter) => { this.setFilter(filter); }}
                 />
 
                 <ProjectList projects={this.state.projects} />
