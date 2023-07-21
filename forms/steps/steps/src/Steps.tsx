@@ -24,6 +24,8 @@ const arrStep: Step[] = [
     },
 ]
 
+arrStep.sort(comparateStep);
+
 function convertDateString(strDate0: string): string {
     let strDate1 = strDate0.substring(8) + '.';
     strDate1 = strDate1 + strDate0.substring(5,7) + '.'
@@ -34,10 +36,10 @@ function convertDateString(strDate0: string): string {
 
 function comparateStep(a: Step, b: Step) {
     if (a.id > b.id) {
-      return 1;
+      return -1;
     }
     if (a.id < b.id) {
-      return -1;
+      return 1;
     }
     return 0;
 }
@@ -111,6 +113,7 @@ export default function Steps() {
                         <input
                             id = "distanceInput"
                             placeholder="км"
+                            type="number"
                         />
                         <button>ОК</button>                        
                    </fieldset>

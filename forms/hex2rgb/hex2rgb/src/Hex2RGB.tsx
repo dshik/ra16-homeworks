@@ -58,7 +58,7 @@ export default function Hex2RGB() {
                         <input
                             id = "hex"
                             name = "hex"
-                            placeholder="#FFFFFF"
+                            placeholder="Введите hex #FFFFFF"
                             onChange={handlerHex}
                         />
                         <br />
