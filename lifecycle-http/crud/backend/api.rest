@@ -10,8 +10,8 @@ POST {{url}}/notes
 Content-Type: application/json
 
 {
-    "id": 0,
-    "content": "First Note"
+    "id": 20,
+    "content": "Why?"
 }
 
 ###
